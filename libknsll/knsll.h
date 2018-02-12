@@ -1,5 +1,5 @@
 /*
-	knsll - adt module for a genric simple linked list interface
+	libknsll - adt module for a genric simple linked list interface
 	------------------------------------------------------------
 
 	This code module is an implementaition of a simple linked list container.
