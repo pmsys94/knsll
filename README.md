@@ -23,3 +23,17 @@ libknsll - adt module for a genric simple linked list interface
 	The deleteItem() Funtion deletes one (1) item AND returns the void pointer of the stored data.
 	
 	The rmlist() Funtion forces all stored data to deletion AND not neturns any stored data. It returns sucess. 
+
+You can run a script from the test app directory with make or anywere in (ba)sh to install or update these codefiles in your project directory.
+
+HINT: It will remove & copy whole FS trees!
+
+Installing to "myproject/":
+	make install to=/home/user/myproject
+	-------- or-------------------------
+	sh <path-to-file>/toproject.sh install /home/user/myproject
+
+Updating on existing directory (will remove old directory and overwrite with new):
+	make update to=/home/user/myproject
+	------- or -------------------------
+	sh <path-to-file>/toproject.sh update /home/user/myproject

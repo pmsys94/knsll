@@ -22,5 +22,11 @@ run: ${EXE}
 gdbrun: ${EXE}
 	gdb ./$<
 
+install: 
+	sh toproject.sh $@ ${to}
+
+update: 
+	sh toproject.sh $@ ${to}
+
 clean:
 	${RM} *.o *.out ${EXE}; cd ${incdir}; ${MAKE} clean
