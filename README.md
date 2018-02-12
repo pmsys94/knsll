@@ -1,8 +1,8 @@
 # knsll
+
 A container libary for a simple linked list in C
 
 libknsll - adt module for a genric simple linked list interface
-	------------------------------------------------------------
 
 	This code module is an implementaition of a simple linked list container.
 	It can store any type of data in it and releases it to the client as void pointer.
