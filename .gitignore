@@ -1,0 +1,7 @@
+*.swp
+*.bak
+.*~
+*.o
+*.a
+*.out
+sll-test
