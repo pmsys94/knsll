@@ -29,4 +29,4 @@ update:
 	sh toproject.sh $@ ${to}
 
 clean:
-	${RM} *.o *.out ${EXE}; cd ${incdir}; ${MAKE} clean
+	${RM} *.o *.out ${EXE}; cd ${listdir}; ${MAKE} clean

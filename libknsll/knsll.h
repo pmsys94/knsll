@@ -19,8 +19,9 @@
 
 	p.s:
 	The deleteItem() Funtion deletes one (1) item AND returns the void pointer of the stored data.
+	This function and searchItem return the data pointer or if sth. went wrong NULL.
 	
-	The rmlist() Funtion forces all stored data to deletion AND not neturns any stored data. It returns sucess. 
+	The rmlist() Funtion forces all stored data to deletion AND not neturns any stored data.
 */
 
 #ifndef KNSLL_H
