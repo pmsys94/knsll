@@ -27,7 +27,7 @@
 #ifndef KNSLL_H
 #define KNSLL_H
 
-#define verKNSLL 2
+#define verKNSLL 3
 
 	#include <stdio.h>
 	#include "knsllnode.h"
@@ -42,6 +42,8 @@
 	
 	llist newlist(compare_f UseToCompare); // constructor of adt: give it a funtion of your client that can compare a search key with the data - it must be like discribed above
 	void rmlist(llist lst, int hardDataFree); // destructor of adt: it will force any data nodes to delete (incl. stored data ptr if param. 2 is true)
+	#define LLDFREE 1 // yes do a free on data pointer
+	#define LLDFINE 0 // no do not free on data pointer
 	// -------------------   linked list adt   --------------------------------------
 
 	// -------------------   iterator   ---------------------------------------------
@@ -51,4 +53,13 @@
 	literator init_it(llist listToIterate); // contructor of iterator adt: give it a list instance
 	void kill_it(literator it); // destructor of iterator adt: it will not care to the list and its data
 	// -------------------   iteartor   ---------------------------------------------
+
+	void perror_knsll(const char* msg); // Converts Error Codes of knsll into error Text and prints "msg : error\n"
+	#define ELLNULL 1 // NULL pointer list
+	#define ELLMEM 2 // NULL on malloc
+	#define ELLZERO 3 // list.items = 0
+	#define ELLCOMP 4 // No compare function
+	#define ELLNF 5 // No matching key found on search
+	#define ELLITN 6 // Iterator null
+
 #endif
